@@ -1,5 +1,5 @@
 # Heart Failure Prediction Data Analysis
-## Analyzing Food Sales for a Variety of Food and Outlet Types
+## Analyzing a patients chance of developing a heart disease based on a variety of attributes
 
 **Christina Reeder**: 
 
@@ -11,22 +11,11 @@ For this dataset, there are 918 rows and 12 columns.
 ## Data Dictionary
 ![Attribut Information.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/Attribute%20Information.png)
 
-## The data was cleaned, and the following were explored:
 
-### Exploratory Data Analysis
-  - Exploratory analysis consisted of histograms and boxplots for interesting columns and groupings to explore the relationships. 
-  - There is also a heatmap that showed a moderate correlation between the Item MRP and Item Outlet Sales.
-
-![food sales histogram.png](https://github.com/dcreeder89/Food_Sales_Predictions/blob/main/food%20sales%20histogram.png)
-
-> This histogram shows that the median of all outlet sales is $1,794.33
-
-
-### Explanatory Data Analysis
-  - To visualize data for explanatory purposes, two bargraphs were chosen.
+## Explanatory Data Analysis
   - The bargraphs explored the relationship between the food's MRP and visibility vs. the type of food it is. 
 
-![mrp vs type.png](https://github.com/dcreeder89/Food_Sales_Predictions/blob/main/mrp%20vs%20type.png)
+![age v heart disease by gender.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/age%20v%20heart%20disease%20by%20gender.png)
 
 The Items with the highest MRPs are of the type
   - Household: $149.42
