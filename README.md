@@ -26,58 +26,46 @@ There is a significantly higher percent chance for male patients to develop a he
 
 The top plot shows that the chance a patient will develop a heart disease decreases as the maximum heart rate achieved by that patient increases, meaning that the faster the heart is able to beat correlates to how healthy that heart is. The bottom plot shows that the maximum heart rate achieved by a patient decreases with the age of the patient. This leads me to the conclusion that older patients are at a higher risk for heart disease than younger patients on average. 
 
+
+## Classification Machine Learning
+
 ### Machine Learning using the following models:
-  - Linear Regression Model
-  - Decision Tree Regressor
-  - Bagged Tree Regressor
-  - Random Forest Regressor
+  - Logistic Regression Classifier
+  - K Nearest Neighbor Classifier
+  - Random Forest Classifier
+
+We also trained the above models utilizing PCA and Feature Engineering to determine if this would lead to a better performing model. 
 
 
-### Models Evaluated and Results:
-  - Linear Regression Model (Test Set)
-    - R^2: -1.6575880497968222e+19
-    - MAE: 558742259972.5935
-    - MSE: 4.5732477819291586e+25
-    - RMSE: 6762579228318.999
-    
-  - Decision Tree Regressor (Test Set)
-    - R^2: 0.5960564372160062
-    - MAE: 736.8796499354125
-    - MSE: 1114471.1152767404
-    - RMSE: 1055.6851402178304
-    
-  - Bagged Tree Regressor (Test Set)
-    - R^2: 0.5511382977051897
-    - MAE: 773.4183585708117
-    - MSE: 1238399.2419976136
-    - RMSE: 1112.833878886518
-    
-  - Random Forest Regressor (Test Set)
-    - R^2: 0.6045439943790407
-    - MAE: 726.928051236731
-    - MSE: 1091054.1378349673
-    - RMSE: 1044.535369355661
+### Optimized Models Evaluated and Test Results: 
+  - Logistic Regression Classifier: C = 0.1 with L2 Tuning
+      - Accuracy: 87.4%
+      - Recall: 86.4%
+
+  - K Nearest Neighbor Classifier: n_neighbors = 9
+      - Accuracy: 87.0%
+      - Recall: 87.1%
+      
+   - Random Forest Classifier: max_depth = 7 & n_estimators = 69
+      - Accuracy: 89.6%
+      - Recall: 90.2%
 
 
-  - The final model chosen was a Random Forest Regressor Model with max_depth of 6 and n_estimators tuned to 250.
-  - Mean Absolute Error was $726.93.
-  - Mean Squared Error was $1,091,054.14
-  - Root Mean Squared Error was $1,044.54
+## Final Model Choice
+The final model chosen was a Random Forest Classifier Model with max_depth of 7, n_estimators tuned to 69, and utilizing PCA
+    - Accuracy: 89.1%
+    - Recall: 90.9%
 
-Using this model to make predictions on food sales would not be very reliable, considering the median outlet sales is $1,794.33 (the RMSE is almost as high as the median). 
+
+### Data Scientist Observations
+Since I prioritize minimizing type 2 errors, the random forest model trained with PCA is better performing than that without PCA. The type 2 errors are the errors in which a patient with heart disease is predicted to not have a heart disease. A patient being given a false negative prognosis will preclude them from receiving treatment they may otherwise need to save their life. 
+
+The random forest model trained without PCA did have one less error overall than the model utilizing PCA. However, it had one more of the type 2 errors, or false negative, errors. 
 
 
 ## Recommendations
-Data Science Insights
-  - Our item oulest sales are slightly linked to the item MRP. However, there is not strong correlation with how much the item weighs or how visible it is on the shelfs. 
-  - There also seems to be little change in the median sales when looking at fat content, outlet size, or outlet type. 
+It is my recommendation that more datapoints be collected on these patients health history to better train the model for predicting the risk of a patient developing a heart disease. As it is, I do not believe this model is sufficient be utilized to predict anything relating to a patients health or treatment. The number of false positive and false negative predictions made by the model are far to high when someone's life is on the line. I would require an accuracy in a model around 98-99% to even begin considering commercial use. 
 
-Model Performance
-  - Overall, the best performing model was the tuned Random Forest Regressor Model. There is still some bias in the model, but it far outperforms the Linear Regression Model, and slightly outperforms the Decision Tree Regressor Model and the Bagged Tree Regressor Model. 
-
-
-## Limitations and Next Steps
-It is my recommendation that more datapoints be collected regarding these items and the outlets in which they are located. Locations in rural vs. urban areas will experience different sale amounts, and having that datapoint would assist in better tuning a machine learning algorithm to make predictions. 
 
 ### For further information
 For any additional questions, please contact dcbailo89@gmail.com
