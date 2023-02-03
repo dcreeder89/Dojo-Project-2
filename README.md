@@ -9,7 +9,7 @@ https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction
 For this dataset, there are 918 rows and 12 columns.
 
 ## Data Dictionary
-![data dictionary.png](https://github.com/dcreeder89/Food_Sales_Predictions/blob/main/data%20dictionary.png)
+![Attribut Information.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/Attribute%20Information.png)
 
 ## The data was cleaned, and the following were explored:
 
