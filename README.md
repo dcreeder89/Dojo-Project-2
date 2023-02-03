@@ -13,19 +13,11 @@ For this dataset, there are 918 rows and 12 columns.
 
 
 ## Explanatory Data Analysis
-  - The bargraphs explored the relationship between the food's MRP and visibility vs. the type of food it is. 
-
+  - The bargraph explores the percentage chance of a patient developing a heart disease grouped by patient age and gender. 
+  - 
 ![age v heart disease by gender.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/age%20v%20heart%20disease%20by%20gender.png)
 
-The Items with the highest MRPs are of the type
-  - Household: $149.42
-  - Dairy: $148.59
-  - Starchy Foods: $147.84
-
-The Items with the lowest MRPs are of the type
-  - Baking Goods: $126.39
-  - Health and Hygiene: $130.82
-  - Soft Drinks: $131.49
+There is a significantly higher percent chance for male patients to develop a heart disease than female patients. The percent chance to develop heart disease increases as the age of the male patients increases. However, the chance of heart disease is highest in females in the age range of 60-69 and lowest in females in the age range of 40-49. 
 
 
 ### Machine Learning using the following models:
