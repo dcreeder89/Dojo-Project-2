@@ -16,13 +16,13 @@ For this dataset, there are 918 rows and 12 columns.
 
 ### Exploring Chance of Heart Disease Based on Age and Gender
    
-![age v heart disease by gender.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/hr%20and%20age%20v%20heart%20disease.png)
+![age v heart disease by gender.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/age%20v%20heart%20disease%20by%20gender.png)
 
 There is a significantly higher percent chance for male patients to develop a heart disease than female patients. The percent chance to develop heart disease increases as the age of the male patients increases. However, the chance of heart disease is highest in females in the age range of 60-69 and lowest in females in the age range of 40-49. 
 
 ### Explore How Maximum Heart Rate Effects Percent Chance of Heart Disease and Changes with Age
 
-![age v heart disease by gender.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/age%20v%20heart%20disease%20by%20gender.png)
+![hr and age v heart disease.png](https://github.com/dcreeder89/Heart-Failure-Prediction-Data-Analysis/blob/main/hr%20and%20age%20v%20heart%20disease.png)
 
 The top plot shows that the chance a patient will develop a heart disease decreases as the maximum heart rate achieved by that patient increases, meaning that the faster the heart is able to beat correlates to how healthy that heart is. The bottom plot shows that the maximum heart rate achieved by a patient decreases with the age of the patient. This leads me to the conclusion that older patients are at a higher risk for heart disease than younger patients on average. 
 
