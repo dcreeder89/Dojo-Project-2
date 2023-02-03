@@ -53,8 +53,8 @@ We also trained the above models utilizing PCA and Feature Engineering to determ
 
 ## Final Model Choice
 The final model chosen was a Random Forest Classifier Model with max_depth of 7, n_estimators tuned to 69, and utilizing PCA
-    - Accuracy: 89.1%
-    - Recall: 90.9%
+- Accuracy: 89.1%
+- Recall: 90.9%
 
 
 ### Data Scientist Observations
